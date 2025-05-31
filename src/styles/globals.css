@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+    font-family: "Ancizar Sans", sans-serif;
+
+    overflow-x: hidden;
+
+    user-select: none;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.main-parent-container::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: linear-gradient( 359.5deg,  rgba(115,122,205,1) 8.8%, rgba(186,191,248,1) 77.4% );
+    opacity: 1;
+    z-index: -1;
+}
+
+
+.main-parent-container {
+    display: block;
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.standard-big-button {
+    text-decoration: none;
+
+    border: 1px solid white;
+    border-radius: 12px;
+    padding: 10px 16px;
+
+    background-color: transparent;
+
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+
+    position: relative;
+
+    width: fit-content;
+
+    transition: 0.2s ease-in-out all;
+}
+
+.standard-big-button:hover {
+    background-color: rgba(255, 255, 255, 0.35);
+    color: #7b8ed8;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
