@@ -1,29 +1,39 @@
-# proj
+# Vue Image Data Extractor
 
-This template should help get you started developing with Vue 3 in Vite.
+This is a Vue 3 application that extracts hidden data (using LSB steganography) from images. It also features smooth animations with [VueUse Motion](https://motion.vueuse.org/).
 
-## Recommended IDE Setup
+---
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## ✨ Features
 
-## Customize configuration
+✅ Upload an image file  
+✅ Preview the selected image with a glowing 3D hover effect  
+✅ Extract hidden messages embedded in the image’s least significant bits (LSB)  
+✅ Smooth fade-in transitions for the extracted message using `GSAP`  
+✅ Beautiful, responsive UI
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+---
 
-## Project Setup
+## 🚀 Technologies
 
-```sh
+- **Vue 3** (Composition API)
+- **Vue Router**
+- **GSAP** for transitions
+- **CSS transitions and effects**
+
+---
+
+## 📦 Project Setup
+
+```bash
+# Install dependencies
 pnpm install
-```
 
-### Compile and Hot-Reload for Development
+# Start the development server
+pnpm run dev
 
-```sh
-pnpm dev
-```
+# Build for production
+pnpm run build
 
-### Compile and Minify for Production
-
-```sh
-pnpm build
-```
+# Preview the production build
+pnpm run preview
