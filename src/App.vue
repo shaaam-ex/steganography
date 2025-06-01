@@ -3,7 +3,7 @@
 <template>
   <div class="main-parent-container">
     <Header />
-    <RouterView />
+    <RouterView class="r-v" />
   </div>
 </template>
 <script setup lang="ts">

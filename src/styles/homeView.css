@@ -4,8 +4,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    padding-top: 20vh;
 }
 
 .inner-main-container-home-page {

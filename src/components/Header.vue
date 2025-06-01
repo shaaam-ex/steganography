@@ -11,7 +11,7 @@
 
       <div class="clickable-links-container-header">
         <ul>
-          <li v-for="option in options" :key="option">{{ option }}</li>
+          <li v-for="option in options" :key="option"><router-link :to="`/${option.toLowerCase() === 'home' ? '' : option.toLowerCase()}`">{{ option }}</router-link></li>
         </ul>
       </div>
 

@@ -72,9 +72,19 @@
 
     font-size: 13.5px;
     font-weight: bold;
-    color: rgba(123, 123, 227, 0.89);
 
     animation: fadeIn 1s linear forwards;
+}
+
+.clickable-links-container-header > ul li a {
+    text-decoration: none;
+    color: rgba(123, 123, 227, 0.89);
+
+    transition: 0.22s ease-in-out;
+}
+
+.clickable-links-container-header > ul li a:hover {
+    color: rgba(123, 123, 227, 0.5);
 }
 
 .user-container {
